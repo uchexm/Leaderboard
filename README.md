@@ -217,9 +217,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Pictures]**
-- [ ] **[Profile]**
-- [ ] **[Login]**
+- [ ] **[Add pictures]**
+- [ ] **[Add profile]**
+- [ ] **[Add login]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -262,10 +262,6 @@ I would like to thank...
 - **[How is this project used?]**
 
   - [You can use it by opening it on a browser and checking the games you are interesred in]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
