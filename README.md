@@ -240,6 +240,7 @@ Feel free to check the [issues page](../../issues/).
 > Write a message to encourage readers to support your project
 
 If you like this project...
+Give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
