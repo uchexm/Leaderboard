@@ -217,9 +217,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Pictures]**
+- [ ] **[Profile]**
+- [ ] **[Login]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,9 +259,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[How is this project used?]**
 
-  - [Answer_1]
+  - [You can use it by opening it on a browser and checking the games you are interesred in]
 
 - **[Question_2]**
 
