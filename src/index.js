@@ -41,3 +41,15 @@ addscore.addEventListener('click', () => {
     document.forms[0].reset();
   }
 });
+
+// To generate background
+function randomBackground() {
+  const x = Math.floor(Math.random() * 256);
+  const y = Math.floor(Math.random() * 256);
+  const z = Math.floor(Math.random() * 256);
+
+  const bgColor = `rgb(${x},${y},${z})`;
+
+  document.body.style.background = bgColor;
+}
+randomBackground();
