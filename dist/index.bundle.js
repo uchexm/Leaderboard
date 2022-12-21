@@ -128,6 +128,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/capAPI.js":
+/*!***********************!*\
+  !*** ./src/capAPI.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"addNewScore\": () => (/* binding */ addNewScore),\n/* harmony export */   \"refreshTable\": () => (/* binding */ refreshTable)\n/* harmony export */ });\nconst refreshTable = async (link) => {\n  const response = await fetch(link);\n  await response.json().then((json) => {\n    const table = document.querySelector('.table');\n    table.replaceChildren();\n    json.result.forEach((scores) => {\n      const listItem = document.createElement('li');\n      listItem.innerHTML = `\n        ${scores.user}: ${scores.score}\n    `;\n      table.append(listItem);\n    });\n  });\n};\n\nconst addNewScore = async (link, user, score) => {\n  await fetch(link, {\n    method: 'POST',\n    body: JSON.stringify({\n      user,\n      score,\n    }),\n    headers: {\n      'Content-type': 'application/json; charset=UTF-8',\n    },\n  });\n};\n\n\n//# sourceURL=webpack://webpack-demo/./src/capAPI.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -135,7 +146,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\r\n\r\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _capAPI_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./capAPI.js */ \"./src/capAPI.js\");\n/* eslint-disable no-unused-vars */\n\n\n\n\nlet gameId = \"\";\nfetch(\"https://us-central1-js-capstone-backend.cloudfunctions.net/api/games\", {\n  method: \"POST\",\n  body: JSON.stringify({\n    name: \"fantasy football\",\n  }),\n  headers: {\n    \"Content-type\": \"application/json; charset=UTF-8\",\n  },\n})\n  .then((response) => response.json())\n  .then((json) => {\n    const res = json.result;\n    gameId = res.slice(14, res.lastIndexOf(\" \"));\n  });\n\nconst refresh = document.querySelector(\".refresh\");\n\nrefresh.addEventListener(\"click\", () => {\n  (0,_capAPI_js__WEBPACK_IMPORTED_MODULE_2__.refreshTable)(\n    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`\n  );\n});\n\nconst addscore = document.getElementById(\"submit\");\nconst name = document.getElementById(\"name\");\nconst score = document.getElementById(\"score\");\n\naddscore.addEventListener(\"click\", () => {\n  if (name.value !== \"\" && score.value !== \"\") {\n    (0,_capAPI_js__WEBPACK_IMPORTED_MODULE_2__.addNewScore)(\n      `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`,\n      name.value,\n      score.value\n    );\n    document.forms[0].reset();\n  }\n});\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 
