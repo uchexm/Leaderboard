@@ -199,7 +199,7 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="author"></a>
+## 👥 Author <a name="author"></a>
 
 > Mention all of the collaborators of this project.
 
