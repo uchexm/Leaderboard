@@ -109,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://uchexm.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,9 +217,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Add pictures]**
+- [ ] **[Add profile]**
+- [ ] **[Add login]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,6 +240,7 @@ Feel free to check the [issues page](../../issues/).
 > Write a message to encourage readers to support your project
 
 If you like this project...
+Give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,6 +251,7 @@ If you like this project...
 > Give credit to everyone who inspired your codebase.
 
 I would like to thank...
+Microverse Inc
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,13 +261,9 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **[How is this project used?]**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - [You can use it by opening it on a browser and checking the games you are interesred in]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
